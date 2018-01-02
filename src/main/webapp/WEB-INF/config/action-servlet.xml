@@ -18,6 +18,10 @@
 		</mvc:interceptor>
 	</mvc:interceptors>
 	
+	<mvc:cors>
+		<mvc:mapping path="/**" allowed-origins="http://localhost"/>
+	</mvc:cors>
+	
     <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
     
     <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" p:order="0" />
