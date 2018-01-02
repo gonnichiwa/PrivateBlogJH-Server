@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gonnichiwa</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper2">
+			<div class="mainNavBar">
+				<div class="logoAndAuthor">
+					<div class="logo">logo</div>
+					<div class="author">logoImgAndIntroduce</div>
+				</div>
+				<div class="navMenuBar">
+					<ul class="nav-menu">
+						<li><a href="#">menuLv1-1</a></li>
+						<li><a href="#">menuLv1-2</a>
+							<ul>
+								<li><a href="#">menuLv2-1</a></li>
+								<li><a href="#">menuLv2-2</a></li>
+							</ul>
+						</li>
+						<li><a href="#">menuLv1-3</a>
+							<ul>
+								<li><a href="#">menu3-1</a></li>
+								<li><a href="#">menu3-2</a></li>
+								<li><a href="#">menu3-3</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- <div class="menuLv1" id="menuLv1_100"><img class="navMenuBlock"/>menuLv1</div>
+					<div class="menuLv1" id="menuLv1_101"><img class="navMenuBlock"/>menuLv1</div>
+					<div class="menuLv1" id="menuLv1_102"><img class="navMenuBlock"/>menuLv1</div> -->
+				</div>
+			</div>
+			<div class="mainContents">
+				<h2>mainContents</h2>
+			</div>
+			<div class="subMenuBar">
+				<div class="recentContents">
+					<div class="recentTitle"><img class="navMenuBlock"/>최근 글 목록</div>
+					<div class="recentArticlesss">
+						<div class="recentArticle"><a href="">[category] 글 제목이 겁내 길 경우 이런식으로 나타 낼 수 도 있습니다 하이 헬로 안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요</a></div>
+						<div class="recentArticle"><a id="atricle1">[category] 글제목</a></div>
+						<div class="recentArticle"><a id="atricle2">[category] 글제목</a></div>
+						<div class="recentArticle"><a id="atricle3">[category] 글제목</a></div>
+						<div class="recentArticle"><a id="atricle4">[category] 글제목</a></div>
+					</div>
+				</div>
+				<div class="about">
+
+				</div>
+				<div class="snsIcons">
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			// navMenu setting
+			
+
+			// 마우스 클릭 : console.log 출력
+			$(".menuLv1").click(function(){
+				var id = $(this).attr('id');
+				alert("id : " + id);
+			});
+
+			$("#menu100").on("click",function(){
+				alert('clicked!');
+				/* 다른 사이트로 이동 */
+				// $(location).attr('href',"http://www.naver.com");
+				// location.href = "http://www.naver.com";
+				/* 다른 파일(html)로 이동 */
+				location.href = "./moved.html";
+			});
+
+			// nav-menu 클래스에 마우스 호버링 시
+			$(".nav-menu li").hover(function(){
+				// 해당 li 태그에 속한 ul 태그를 보여준다
+				$("ul:first",this).show();
+			}, function(){
+				// 마우스 뗐을 때 : 숨긴다.
+				$("ul:first",this).hide();
+			});
+
+
+		});
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
