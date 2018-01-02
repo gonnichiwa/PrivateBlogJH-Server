@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- MyBatis query 넣을 땐 쿼리문에 세미콜론좀 빼자... -->
+<mapper namespace="sample">
+	<select id="selectMenuList" parameterType="hashmap" resultType="hashmap">
+		<![CDATA[
+			SELECT
+				rownum,
+				bm_idNum,
+				bm_name,
+				bm_lev,
+				bm_step,
+				bm_ref,
+				bm_isDel
+			FROM 
+				BlogMenu
+		]]>
+	</select>
+</mapper>
