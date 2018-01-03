@@ -13,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import privateBlog.gonnichiwa.sample.service.SampleService;
 
-@CrossOrigin
+//@CrossOrigin 전체 컨트롤러의 요청 기능(메소드) CrossOrigin 처리
 @Controller
 public class SampleController {
 	
@@ -26,7 +26,6 @@ public class SampleController {
 	@RequestMapping(value="/sample/getMenuList.do")
 	public ModelAndView getMenuList(Map<String, Object> commandMap) throws Exception{
 		ModelAndView mav = new ModelAndView();
-		log.debug("getMenuList!");
 		
 		List<Map<String,Object>> menuList = sService.selectMenuList(commandMap);
 		mav.addObject("menuList",menuList);
