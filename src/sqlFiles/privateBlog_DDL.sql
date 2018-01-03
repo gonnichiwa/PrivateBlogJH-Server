@@ -1,5 +1,9 @@
 
 DROP TABLE BlogTable;
+DROP SEQUENCE seq_blogBoard_bbNum;
+
+DROP TABLE BlogMenu;
+DROP SEQUENCE seq_blogMenu_idNum;
 
 CREATE TABLE BlogBoard (
   bb_Num int primary key,
@@ -31,15 +35,20 @@ increment by 1
 nomaxvalue
 nocache;
 
+-- level 1 navMenu
 insert into blogMenu (bm_IdNum, bm_Name, bm_Lev, bm_Step, bm_ref, bm_IsDel) 
 values (seq_blogMenu_idNum.nextval, 'html',1,0,0,'N');
 insert into blogMenu (bm_IdNum, bm_Name, bm_Lev, bm_Step, bm_ref, bm_IsDel) 
 values (seq_blogMenu_idNum.nextval, 'css',1,0,0,'N');
 insert into blogMenu (bm_IdNum, bm_Name, bm_Lev, bm_Step, bm_ref, bm_IsDel) 
 values (seq_blogMenu_idNum.nextval, 'javascript',1,0,0,'N');
+insert into blogMenu (bm_IdNum, bm_Name, bm_Lev, bm_Step, bm_ref, bm_IsDel) 
+values (seq_blogMenu_idNum.nextval, 'java',1,0,0,'N');
+
+-- level 2 navMenu
+insert into blogMenu (bm_IdNum, bm_Name, bm_Lev, bm_Step, bm_ref, bm_IsDel) 
+values (seq_blogMenu_idNum.nextval, 'grammer',2,1,10,'N');
+insert into blogMenu (bm_IdNum, bm_Name, bm_Lev, bm_Step, bm_ref, bm_IsDel) 
+values (seq_blogMenu_idNum.nextval, 'API',2,2,10,'N');
 
 commit;
-
-
-
-
