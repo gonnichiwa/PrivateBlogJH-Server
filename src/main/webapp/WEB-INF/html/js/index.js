@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	// navMenu setting
 	$.ajax({
 		type : "GET",
@@ -9,11 +10,18 @@ $(document).ready(function(){
 		},
 		success : function(data){
 			console.log(data);
+
+			var result = data; // 아래 로그 처럼 JSON 데이타 접근
+			console.log(result.menuList[0].BM_NAME);
+
+			// json 데이터를 이용하여 nav메뉴로 적용하여 뿌림
+			for(var i = 0; i < result.menuList.length; i++){
+				var html = "<li><a href='#' id='"+result.menuList[i].BM_IDNUM+"'>"+result.menuList[i].BM_NAME+"</a></li>";
+				console.log(html);
+				$(".nav-menu").append(html);
+			}
 		}
 	});
-
-	// left nav menu append() test
-
 
 	// 마우스 클릭 : console.log 출력
 	$(".menuLv1").click(function(){
