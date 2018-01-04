@@ -38,8 +38,8 @@ Private Blog Server
 > `ojdbc6.jar` and `ojdbc14.jar` download [http://www.oracle.com/technetwork/apps-tech/jdbc-112010-090769.html]
 
 > ojdbc6.jar, ojdbc14.jar 다운로드 후 다운 경로에서 다음 명령어 입력
-> `mvn install:install-file -Dfile=ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=10.0 -Dpackaging=jar -DgeneratePom=true`
-> `mvn install:install-file -Dfile=ojdbc14.jar -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.0 -Dpackaging=jar -DgeneratePom=true`
+>> 1. `mvn install:install-file -Dfile=ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=10.0 -Dpackaging=jar -DgeneratePom=true`
+>> 2. `mvn install:install-file -Dfile=ojdbc14.jar -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.0 -Dpackaging=jar -DgeneratePom=true`
 
 ***
 
