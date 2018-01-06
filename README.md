@@ -1,5 +1,7 @@
 Private Blog Server
 ================================
+![p..ri...vit....ser...ver...](https://drive.google.com/file/d/1nQUzOXmUtc3Cy3F6p0R5FxqGVpzZrfk2/view?usp=sharing)
+
 ## \# 목적
 > private Blog Client - Server 통신 실습을 위한
 > 서버의 local 개발환경 설치 및 서버 API 문서 입니다
@@ -33,11 +35,10 @@ Private Blog Server
 </localRepository>`
 
 ### 3-1. oracle java database connector (ojdbc) download
-> `ojdbc6.jar` and `ojdbc14.jar` download [http://www.oracle.com/technetwork/apps-tech/jdbc-112010-090769.html]
+> `ojdbc6.jar` download [http://www.oracle.com/technetwork/apps-tech/jdbc-112010-090769.html]
 
-> ojdbc6.jar, ojdbc14.jar 다운로드 후 다운 경로에서 다음 명령어 입력
->> 1. `mvn install:install-file -Dfile=ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=10.0 -Dpackaging=jar -DgeneratePom=true`
->> 2. `mvn install:install-file -Dfile=ojdbc14.jar -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.0 -Dpackaging=jar -DgeneratePom=true`
+> ojdbc6.jar 다운로드 후 다운 경로에서 다음 명령어 입력
+>> `mvn install:install-file -Dfile=ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=10.0 -Dpackaging=jar -DgeneratePom=true`
 
 ## 4. 세팅 (STS)
 > 1. 메인메뉴 `[window]` - `[preferences]` 클릭
