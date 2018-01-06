@@ -1,5 +1,7 @@
 Private Blog Server
 ================================
+![p..ri...vit....ser...ver...](https://drive.google.com/file/d/1nQUzOXmUtc3Cy3F6p0R5FxqGVpzZrfk2/view?usp=sharing)
+
 ## \# 목적
 > private Blog Client - Server 통신 실습을 위한
 > 서버의 local 개발환경 설치 및 서버 API 문서 입니다
