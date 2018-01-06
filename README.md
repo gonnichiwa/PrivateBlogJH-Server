@@ -1,6 +1,6 @@
 Private Blog Server
 ================================
-![p..ri...vit....ser...ver...](https://drive.google.com/file/d/1nQUzOXmUtc3Cy3F6p0R5FxqGVpzZrfk2/view?usp=sharing)
+![p..ri...vit....ser...ver...](./src/main/webapp/WEB-INF/img/privateBlogServer.jpg)
 
 ## \# 목적
 > private Blog Client - Server 통신 실습을 위한
